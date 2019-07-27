@@ -50,12 +50,12 @@ class DemoqaRegisterTest(unittest.TestCase):
         #Filling up date of birth
         #by xpath
         wait.until(expected_conditions.presence_of_element_located((By.XPATH, '//*[@id="mm_date_8"]')))
-        Select(driver.find_element_by_xpath('//*[@id="mm_date_8"]')).select_by_value("10")
+        Select(driver.find_element_by_xpath('//*[@id="mm_date_8"]')).select_by_value("12")
 
         #by id
-        Select(driver.find_element_by_id("dd_date_8")).select_by_value("18")
+        Select(driver.find_element_by_id("dd_date_8")).select_by_value("12")
         #by id
-        Select(driver.find_element_by_id("yy_date_8")).select_by_value("1986")
+        Select(driver.find_element_by_id("yy_date_8")).select_by_value("1990")
 
         #Fill up the phone number
         elem_phone_number = driver.find_element_by_id("phone_9")
@@ -65,12 +65,12 @@ class DemoqaRegisterTest(unittest.TestCase):
         #username
         elem_username = driver.find_element_by_id("username")
         elem_username.clear()
-        elem_username.send_keys("dante")
+        elem_username.send_keys("blah")
 
         #email
         elem_email = driver.find_element_by_id("email_1")
         elem_email.clear()
-        elem_email.send_keys("dhans053008@gmail.com")
+        elem_email.send_keys("blah@gmail.com")
 
         #Profile Picture Upload#
         #elem_profile_pic = driver.find_element_by_id("profile_pic_10")
@@ -84,12 +84,12 @@ class DemoqaRegisterTest(unittest.TestCase):
         #password
         elem_password = driver.find_element_by_id("password_2")
         elem_password.clear()
-        elem_password.send_keys("password123")
+        elem_password.send_keys("blah")
 
         #confrim password
         elem_confirm_password = driver.find_element_by_id("confirm_password_password_2")
         elem_confirm_password.clear()
-        elem_confirm_password.send_keys("password123")
+        elem_confirm_password.send_keys("blah")
 
         #Clicking the submit button
         elem_submit = driver.find_element_by_name('pie_submit').click()
